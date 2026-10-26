@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech &amp; Accessories</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="inicio">
+
+  <header>
+    <div class="aviso">
+      <p class="mb-0">Frete grátis para todo o Brasil acima de <strong>R$ 100,00</strong>!</p>
+    </div>
+
+    <div class="container">
+      <div class="barra-superior">
+        <a href="#inicio" class="logo">Tech &amp; Accessories</a>
+
+        <div class="navegacao">
+          <button class="botao-menu" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="menuPrincipal" class="menu-principal">
+            <a href="#inicio" class="ativo">Início</a>
+
+            <div class="dropdown">
+              <a href="#categorias" class="link-categorias dropdown-toggle" id="menuCategorias" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="badge-categorias">Categorias</span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="menuCategorias">
+                <li><a class="dropdown-item" href="#audio">Áudio</a></li>
+                <li><a class="dropdown-item" href="#teclados">Teclados</a></li>
+                <li><a class="dropdown-item" href="#mouses">Mouses</a></li>
+                <li><a class="dropdown-item" href="#wearables">Wearables</a></li>
+                <li><a class="dropdown-item" href="#carregadores">Carregadores</a></li>
+                <li><a class="dropdown-item" href="#acessorios">Acessórios</a></li>
+              </ul>
+            </div>
+
+            <a href="#destaques">Destaques</a>
+          </nav>
+        </div>
+
+        <div class="pesquisa">
+          <form action="search.html" method="get">
+            <input type="search" id="search" name="query" class="form-control" placeholder="Buscar produtos..." aria-label="Buscar produtos">
+            <button type="submit" class="btn" aria-label="Pesquisar"><i class="bi bi-search"></i></button>
+          </form>
+        </div>
+
+        <div class="acoes">
+          <a href="#" class="carrinho" aria-label="Carrinho"><i class="bi bi-cart"></i><span class="contador">0</span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- CARROSSEL -->
+    <section id="banners">
+      <div id="carouselLoja" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselLoja" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Banner 1"></button>
+          <button type="button" data-bs-target="#carouselLoja" data-bs-slide-to="1" aria-label="Banner 2"></button>
+          <button type="button" data-bs-target="#carouselLoja" data-bs-slide-to="2" aria-label="Banner 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="banner banner-1">
+              <div class="banner-texto">
+                <p class="banner-tag">TECH &amp; ACCESSORIES</p>
+                <h2>Tecnologia para<br>o seu dia a dia.</h2>
+                <p>Conheça nossos acessórios.</p>
+                <a href="#destaques" class="btn btn-azul">Explorar produtos <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="banner banner-2 banner-foto">
+              <div class="banner-texto">
+                <p class="banner-tag">OFERTAS ESPECIAIS</p>
+                <h2>Melhore o<br>seu setup.</h2>
+                <p>Encontre seus novos periféricos.</p>
+                <a href="#categorias" class="btn btn-azul">Ver categorias <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="banner banner-3">
+              <div class="banner-texto">
+                <p class="banner-tag">NOVIDADES</p>
+                <h2>Conecte-se<br>ao que importa.</h2>
+                <p>Acessórios para acompanhar sua rotina.</p>
+                <a href="#destaques" class="btn btn-azul">Ver produtos <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselLoja" data-bs-slide="prev" aria-label="Banner anterior">
+          <i class="bi bi-chevron-left"></i>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselLoja" data-bs-slide="next" aria-label="Próximo banner">
+          <i class="bi bi-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- CATEGORIAS -->
+    <section id="categorias">
+      <div class="secao-titulo">
+        <h2>Categorias</h2>
+        <a href="#destaques">Ver todas <i class="bi bi-arrow-right"></i></a>
+      </div>
+
+      <div class="grade-categorias">
+        <a href="#destaques" id="audio" class="categoria">
+          <img src="images/audio.png" alt="Áudio">
+          <span>Áudio</span>
+        </a>
+        <a href="#destaques" id="teclados" class="categoria">
+          <img src="images/teclados.png" alt="Teclados">
+          <span>Teclados</span>
+        </a>
+        <a href="#destaques" id="mouses" class="categoria">
+          <img src="images/mouses.png" alt="Mouses">
+          <span>Mouses</span>
+        </a>
+        <a href="#destaques" id="wearables" class="categoria">
+          <img src="images/wearables.png" alt="Wearables">
+          <span>Wearables</span>
+        </a>
+        <a href="#destaques" id="carregadores" class="categoria">
+          <img src="images/carregadores.png" alt="Carregadores">
+          <span>Carregadores</span>
+        </a>
+        <a href="#destaques" id="acessorios" class="categoria">
+          <img src="images/acessorios.png" alt="Acessórios">
+          <span>Acessórios</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- DESTAQUES -->
+    <section id="destaques">
+      <div class="secao-titulo">
+        <h2>Destaques</h2>
+        <a href="#destaques">Ver todos <i class="bi bi-arrow-right"></i></a>
+      </div>
+
+      <div class="grade-produtos">
+        <!-- Produto 1 -->
+        <article class="produto" data-bs-toggle="modal" data-bs-target="#modalProduto1" style="cursor: pointer;">
+          <span class="selo">Mais vendido</span>
+          <div class="produto-img"><img src="images/produto1.png" alt="Fone Bluetooth AirBeat Pro"></div>
+          <div class="produto-info">
+            <h3>Fone Bluetooth AirBeat Pro</h3>
+            <div class="estrelas"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> <small>(124)</small></div>
+            <p class="preco">R$ 149,90</p>
+            <button class="btn btn-escuro w-100" onclick="event.stopPropagation();"><i class="bi bi-cart"></i> Adicionar ao carrinho</button>
+          </div>
+        </article>
+
+        <!-- Produto 2 -->
+        <article class="produto" data-bs-toggle="modal" data-bs-target="#modalProduto2" style="cursor: pointer;">
+          <span class="selo">Novo</span>
+          <div class="produto-img"><img src="images/produto2.png" alt="Teclado Mecânico KeyFlow"></div>
+          <div class="produto-info">
+            <h3>Teclado Mecânico KeyFlow</h3>
+            <div class="estrelas"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> <small>(98)</small></div>
+            <p class="preco">R$ 219,90</p>
+            <button class="btn btn-escuro w-100" onclick="event.stopPropagation();"><i class="bi bi-cart"></i> Adicionar ao carrinho</button>
+          </div>
+        </article>
+
+        <!-- Produto 3 -->
+        <article class="produto" data-bs-toggle="modal" data-bs-target="#modalProduto3" style="cursor: pointer;">
+          <span class="selo selo-oferta">Oferta</span>
+          <div class="produto-img"><img src="images/produto3.png" alt="Mouse Sem Fio NovaClick"></div>
+          <div class="produto-info">
+            <h3>Mouse Sem Fio NovaClick</h3>
+            <div class="estrelas"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i> <small>(76)</small></div>
+            <p class="preco"><s>R$ 119,90</s> R$ 89,90</p>
+            <button class="btn btn-escuro w-100" onclick="event.stopPropagation();"><i class="bi bi-cart"></i> Adicionar ao carrinho</button>
+          </div>
+        </article>
+
+        <!-- Produto 4 -->
+        <article class="produto" data-bs-toggle="modal" data-bs-target="#modalProduto4" style="cursor: pointer;">
+          <span class="selo">Mais vendido</span>
+          <div class="produto-img"><img src="images/produto4.png" alt="Smartwatch Pulse"></div>
+          <div class="produto-info">
+            <h3>Smartwatch Pulse</h3>
+            <div class="estrelas"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> <small>(203)</small></div>
+            <p class="preco">R$ 279,90</p>
+            <button class="btn btn-escuro w-100" onclick="event.stopPropagation();"><i class="bi bi-cart"></i> Adicionar ao carrinho</button>
+          </div>
+        </article>
+      </div>
+
+    </section>
+
+    <!-- OFERTAS -->
+    <section id="ofertas">
+      <div class="grade-promos">
+        <div class="promo promo-escura">
+          <div>
+            <p class="promo-tag">OFERTAS ESPECIAIS</p>
+            <h3>Até 40% OFF</h3>
+            <p>em fones e headsets</p>
+            <a href="#destaques" class="btn btn-contorno-claro">Ver ofertas <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="promo promo-clara">
+          <div>
+            <p class="promo-tag">PRODUTOS EM DESTAQUE</p>
+            <h3>Suporte para notebook</h3>
+            <p>Mais conforto e produtividade.</p>
+            <a href="#destaques" class="btn btn-contorno">Ver produto <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFÍCIOS -->
+    <section class="beneficios">
+      <div class="beneficio"><i class="bi bi-truck"></i><div><strong>Frete grátis</strong><small>para todo o Brasil acima de R$ 100,00</small></div></div>
+      <div class="beneficio"><i class="bi bi-credit-card"></i><div><strong>Pagamento seguro</strong><small>diversas formas de pagamento</small></div></div>
+      <div class="beneficio"><i class="bi bi-arrow-repeat"></i><div><strong>Troca grátis</strong><small>em até 30 dias</small></div></div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+      <div class="newsletter-texto">
+        <i class="bi bi-envelope"></i>
+        <div>
+          <strong>Receba nossas ofertas</strong>
+          <small>Cadastre seu e-mail e fique por dentro das novidades!</small>
+        </div>
+      </div>
+      <form class="newsletter-form input-group">
+        <input type="email" class="form-control" placeholder="Seu e-mail" aria-label="Seu e-mail">
+        <button type="submit" class="btn btn-escuro">Assinar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="rodape-grade">
+        <div>
+          <h4>Institucional</h4>
+          <a href="#">Sobre nós</a><a href="#">Política de privacidade</a><a href="#">Termos de uso</a><a href="#">Trabalhe conosco</a>
+        </div>
+        <div>
+          <h4>Ajuda</h4>
+          <a href="#">Fale conosco</a><a href="#">Trocas e devoluções</a><a href="#">Formas de pagamento</a><a href="#">Perguntas frequentes</a>
+        </div>
+        <div>
+          <h4>Redes sociais</h4>
+          <a href="#"><i class="bi bi-instagram"></i> Instagram</a>
+          <a href="#"><i class="bi bi-youtube"></i> YouTube</a>
+          <a href="#"><i class="bi bi-facebook"></i> Facebook</a>
+          <a href="#"><i class="bi bi-twitter-x"></i> X</a>
+        </div>
+        <div>
+          <h4>Formas de pagamento</h4>
+          <div class="pagamentos">
+            <span>VISA</span><span>MC</span><span>elo</span><span>PIX</span>
+          </div>
+        </div>
+      </div>
+      <p class="copy">&copy; 2026 Tech &amp; Accessories. Todos os direitos reservados. CNPJ: 00.000.000/0000-00</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- MODAL DO PRODUTO -->
+  <div class="modal fade" id="modalProduto1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Fone Bluetooth AirBeat Pro</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/produto1.png" alt="Fone Bluetooth AirBeat Pro" class="img-fluid mb-3" style="max-height: 200px; object-fit: contain;">
+          <div class="estrelas mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> <small>(124)</small></div>
+          <p class="fs-4 fw-bold text-primary mb-3">R$ 149,90</p>
+          <p class="text-muted">Fone Bluetooth de alta qualidade com som estéreo imersivo e autonomia prolongada.</p>
+          <button class="btn btn-dark w-100"><i class="bi bi-cart"></i> Adicionar ao carrinho</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL DO PRODUTO 2 -->
+  <div class="modal fade" id="modalProduto2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Teclado Mecânico KeyFlow</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/produto2.png" alt="Teclado Mecânico KeyFlow" class="img-fluid mb-3" style="max-height: 200px; object-fit: contain;">
+          <div class="estrelas mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> <small>(98)</small></div>
+          <p class="fs-4 fw-bold text-primary mb-3">R$ 219,90</p>
+          <p class="text-muted">Teclado mecânico retroiluminado para máximo desempenho e conforto em jogos e trabalho.</p>
+          <button class="btn btn-dark w-100"><i class="bi bi-cart"></i> Adicionar ao carrinho</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL DO PRODUTO 3 -->
+  <div class="modal fade" id="modalProduto3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Mouse Sem Fio NovaClick</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/produto3.png" alt="Mouse Sem Fio NovaClick" class="img-fluid mb-3" style="max-height: 200px; object-fit: contain;">
+          <div class="estrelas mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i> <small>(76)</small></div>
+          <p class="fs-4 fw-bold text-primary mb-3"><s>R$ 119,90</s> R$ 89,90</p>
+          <p class="text-muted">Mouse ergonómico sem fio de alta precisão com clique silencioso e bateria de longa duração.</p>
+          <button class="btn btn-dark w-100"><i class="bi bi-cart"></i> Adicionar ao carrinho</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL DO PRODUTO 4 -->
+  <div class="modal fade" id="modalProduto4" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Smartwatch Pulse</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/produto4.png" alt="Smartwatch Pulse" class="img-fluid mb-3" style="max-height: 200px; object-fit: contain;">
+          <div class="estrelas mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> <small>(203)</small></div>
+          <p class="fs-4 fw-bold text-primary mb-3">R$ 279,90</p>
+          <p class="text-muted">Monitorize a sua saúde, treinos e notificações diretamente no pulso com estilo e elegância.</p>
+          <button class="btn btn-dark w-100"><i class="bi bi-cart"></i> Adicionar ao carrinho</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
